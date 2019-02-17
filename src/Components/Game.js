@@ -6,17 +6,32 @@ class Game extends React.Component
     {
         super(props)
         this.state={
-            title:props.title,
-            platform:props.platform,
-            genre:props.genre,
-            score:props.score,
-            editors_choice:props.editors_choice,
+            title:this.props.title,
+            platform:this.props.platform,
+            genre:this.props.genre,
+            score:this.props.score,
+            editors_choice:this.props.editors_choice,
         }
     }
 
     render()
     {
-       return (<h3>{this.props.title}</h3>)
+        var randombg='#'
+        var randomColor
+        for(let i=0;i<6;i++)
+        {
+            randomColor =Math.floor(Math.random()*10).toString()
+            randombg+=randomColor
+        }
+       return (
+        <div id="game" style={{background:randombg}}>
+       <h3>Title: {this.state.title}</h3><br/>
+       <em>Runs on {this.state.platform}</em><br/>
+       <h4>Genre: {this.state.genre}</h4><br/>
+       <p>Editors Choice: {this.state.editors_choice} :)</p><br/>
+       <h3>Rating: {this.state.score}!!</h3>
+       </div>
+       )
         
     }
 }

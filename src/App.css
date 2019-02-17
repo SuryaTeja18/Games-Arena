@@ -1,22 +1,70 @@
 #header{
   margin:0;
-  background: rgb(38, 77, 90);
   height:100px;
   text-align: center;
   border: 1px solid black;
-  color:gold;
+  color:rgb(155, 165, 21);
+  background:black;
+  position: fixed;
+  width:100%;
 }
 
 #searchbox{
-  margin-left:70px;
-  margin-top:10px; 
-  width:90%;
+  margin-top:90px;
   padding:10px;
   border-radius: 20px;
-  background: lightgray;
-  border:1px solid black;
+  text-align: center;
 }
 
 input[type=search]:focus{
   outline: 0;
+}
+
+button:focus{
+  outline: 0;
+}
+
+#game{
+  border-radius:100px;
+  width:500px;
+  border: 5px solid black;
+  text-align: center; 
+  
+}
+
+#buttong1{
+ margin-top:10px; 
+text-align: center;
+}
+
+button{
+  background:rgb(117, 117, 165);
+  color:black;
+  border-radius: 10px;
+}
+
+#search{
+  border-radius:7px; 
+  height:35px;
+}
+
+input[type=dropdown]:focus{
+  outline: 0;
+}
+
+#pageNumbers{
+  text-align: center;
+  height: 100px;
+  width:45%;
+  padding:20px;
+}
+#pageNumbers button{
+  background: rgb(52, 52, 121);
+  color:white;
+  border-radius: 5px;
+  width:30px;
+}
+
+button:hover{
+  cursor: pointer;
 }
